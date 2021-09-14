@@ -1,0 +1,27 @@
+version: "3.1"
+services:
+  mongo:
+    container_name: mongo
+    image: mongo
+    restart: always
+    ports:
+      - 27017:27017
+    volumes:
+      - ./docker/data/db:/data/db
+
+  solution:
+    container_name: website
+    environment:
+    - ASPNETCORE_ENVIRONMENT=Development
+    build: "./src ."
+    ports:
+      - "5001:80"
+    depends_on:
+      - mongo
+    
+
+  redis:
+    container_name: redis
+    image: "redis"
+    ports:
+      - "5002:6379"
