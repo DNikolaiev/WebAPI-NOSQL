@@ -1,6 +1,6 @@
 # WebAPI-NOSQL
 
-#### This is Demo WebApi Application that uses MongoDb for data storage and Redis to provide distributed caching mechanism. API is documented with Swagger. Navigate to */swagger* Url to test it
+#### This is Demo .NET Core WebApi Application that uses MongoDb for data storage and Redis to provide distributed caching mechanism. API is documented with Swagger. Navigate to */swagger* Url to test it
 
 ![UI](https://user-images.githubusercontent.com/23034890/133496984-d1f5c9f7-2260-43ed-ac10-542f84fc1aab.png)
 ![Getproduct](https://user-images.githubusercontent.com/23034890/133497343-70ff4862-b160-49df-b483-a41b273d8b72.png)
